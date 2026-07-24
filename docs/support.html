@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dokit — Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2.5rem 1.25rem 5rem;
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1c1c1e; background: #fff;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.2rem; margin: 2.25rem 0 .6rem; letter-spacing: -.01em; }
+  h3 { font-size: 1.02rem; margin: 1.5rem 0 .35rem; }
+  p, li { margin: 0 0 .85rem; }
+  ul { padding-left: 1.25rem; }
+  .meta { color: #6b6b70; font-size: .95rem; margin-bottom: 2rem; }
+  .lede { font-size: 1.1rem; }
+  .contact {
+    border: 1px solid #d8d8dd; border-radius: 12px; padding: 1.1rem 1.25rem; margin: 1.75rem 0;
+    background: #fafafa;
+  }
+  .contact p:last-child { margin-bottom: 0; }
+  .mail { font-size: 1.15rem; font-weight: 600; }
+  a { color: #0a7f74; }
+  footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid #e5e5ea; color: #6b6b70; font-size: .9rem; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f2f2f7; background: #121214; }
+    .meta, footer { color: #9a9aa0; }
+    .contact { background: #1c1c1f; border-color: #34343a; }
+    a { color: #4fd1c5; }
+    footer { border-top-color: #2c2c30; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Dokit Support</h1>
+  <p class="meta">Questions, problems, and how things work</p>
+
+  <p class="lede">Dokit turns the documents you already have into something you can search, ask questions
+  about, and actually find again — entirely on your own device.</p>
+
+  <div class="contact">
+    <p><strong>Need help?</strong> Email <span class="mail"><a href="mailto:dokit.feedback@gmail.com">dokit.feedback@gmail.com</a></span></p>
+    <p>The quickest route is <strong>Settings → Send Feedback</strong> in the app: it prepares an email with
+    your app and device version already filled in (and nothing from your documents), which helps a lot in
+    working out what went wrong.</p>
+  </div>
+
+  <h2>Getting started</h2>
+
+  <h3>Why does it download something on first run?</h3>
+  <p>Dokit runs AI models <em>on your device</em>, so there's a model to fetch the first time. It can be
+  a large download — use Wi-Fi, and leave it running. On devices that support Apple Intelligence, Dokit can
+  use the built-in model instead, with <strong>no download at all</strong>.</p>
+
+  <h3>The download is slow or stopped</h3>
+  <p>Downloads resume, so you can leave the app and come back. If one seems stuck, cancel and retry it from
+  <strong>Settings → Models</strong>. Downloads run over Wi-Fi by default.</p>
+
+  <h3>How much space do I need?</h3>
+  <p>The models are the bulk of it. <strong>Settings → Import &amp; Storage</strong> shows exactly what's
+  using space, and lets you remove a model you're not using.</p>
+
+  <h2>Getting the best results</h2>
+  <p>Dokit reads your documents with an on-device AI model. A few habits make what it gives back noticeably
+  better.</p>
+
+  <h3>Capture clean pages</h3>
+  <ul>
+    <li>Shoot the <strong>whole page</strong> in good, even light, with the text roughly straight and in focus.</li>
+    <li>A <strong>PDF that already contains text</strong> (exported, not scanned) reads most accurately of all.
+    For a photo or a scanned PDF, Dokit reads the text off the image, so sharpness matters.</li>
+    <li>Multi-page document? Keep its pages together in one import rather than as separate one-page items.</li>
+  </ul>
+
+  <h3>Use the Hint to <em>correct</em> a document, not describe it</h3>
+  <p>Each document has a <strong>Hint</strong> field (tap <strong>Edit</strong>). What you write there is handed
+  to the model when it categorizes the document and pulls out its facts. The key thing to understand: the model
+  <strong>already reads the document</strong>, so restating what's plainly on the page — <em>"electricity bill
+  from ACME"</em> — tells it nothing it didn't have. A hint earns its keep when it <strong>steers the model
+  somewhere it wasn't going on its own</strong>:</p>
+  <ul>
+    <li><strong>Point it the right way when it gets the type wrong:</strong> <em>"This is a payment receipt, not
+    a warranty."</em></li>
+    <li><strong>Say what you actually care about,</strong> so the right facts come out: <em>"What matters here
+    is the renewal date and the excess."</em></li>
+    <li><strong>Add context the document itself doesn't state:</strong> <em>"This is for my business account,
+    not personal"</em>, or <em>"Keep for the 2026 tax return."</em></li>
+    <li><strong>Disambiguate who or what it's about</strong> when the page alone is unclear.</li>
+  </ul>
+  <p>After you add or change a hint, use <strong>Re-classify</strong> or <strong>Recompute facts</strong> to
+  apply it. If a document already came out right, it needs no hint at all.</p>
+  <p>The Hint is fed to the AI by design. For a <strong>private note that must never reach any model</strong>,
+  use the separate <strong>Notes</strong> field instead — it stays on your device and is never sent to the AI,
+  searched, or used in understanding.</p>
+
+  <h3>Give your categories hints to settle the close calls</h3>
+  <p>Under <strong>Settings → Categories</strong> you can add a one-line <strong>hint</strong> to a category or
+  subcategory. Like a document hint, it's worth most where the model would otherwise hesitate — drawing a
+  boundary it can't guess on its own. For example, a hint on "Home" that reads <em>"the house itself — mortgage,
+  deeds, repairs; not household bills"</em> tells Dokit where a mortgage statement goes when "Home" and
+  "Finance" both look plausible. You can also set the <strong>default facts</strong> a category usually carries,
+  so the model knows to look for them even when they're easy to miss.</p>
+
+  <h3>Ask Dokit to find a fact it missed</h3>
+  <p>If a document clearly contains something Dokit didn't pull out, you don't have to type it in
+  yourself — you can ask Dokit to find it. On the document's facts, <strong>add a fact with just a
+  name and leave the value empty</strong> (the field even says <em>"empty = request"</em>). It becomes a
+  <strong>requested</strong> field, and the next time you <strong>Recompute facts</strong>, Dokit tries
+  hard to locate that value in the document — handy for a specific thing like <em>"Policy number"</em>,
+  <em>"IBAN"</em>, or <em>"Serial number"</em>. Re-running only merges in what it finds; the values you've
+  kept or edited are never overwritten.</p>
+
+  <h3>Ask good questions</h3>
+  <p>Ask works best when the question is <strong>specific and names the thing</strong> — <em>"When does my
+  car insurance expire?"</em> beats <em>"insurance?"</em>. Every answer is <strong>cited</strong>: tap a
+  numbered source to open the document it came from. If Ask says it can't find the answer, the fact may live
+  in a document that hasn't finished processing, or that has no search model behind it yet.</p>
+
+  <h3>Let Subjects connect the dots</h3>
+  <p>Dokit recognizes the <strong>people, vehicles, and other things</strong> your documents are about and
+  groups documents under them (the <strong>Subjects</strong> tab). If it splits one person into two, or you
+  spot duplicates, you can merge them — and it learns to keep them together next time.</p>
+
+  <h3>Pick the right model for the job</h3>
+  <p>A <strong>larger model</strong> is more accurate but slower and needs more space and memory; a
+  <strong>smaller</strong> one is quick and light. If accuracy on hard documents matters more than speed,
+  switch under <strong>Settings → Models</strong>. Keeping the <strong>embedding model</strong> installed is
+  what enables meaning-based search and Ask.</p>
+
+  <h2>Using Dokit</h2>
+
+  <h3>My documents are still "processing"</h3>
+  <p>Importing, reading and understanding a document happens in the background, and pauses when your device
+  is hot or busy. Keep the app open to let it work through the queue.</p>
+
+  <h3>Search finds nothing</h3>
+  <p>Search needs an embedding model. If you skipped it, Dokit still does keyword search, but not meaning-based
+  search or Ask. Add one under <strong>Settings → Models</strong>, then let the library re-index.</p>
+
+  <h3>Ask gave a wrong or incomplete answer</h3>
+  <p>Answers are generated by an on-device model from your own documents, and are cited — tap a numbered
+  source to open the document it came from and check it. <strong>Always verify anything important against
+  the original.</strong> Smaller models are faster but less accurate; a larger model usually answers better.</p>
+
+  <h3>Something was categorized or extracted wrongly</h3>
+  <p>You can correct anything, and your corrections are kept — Dokit will not overwrite them when it
+  reprocesses a document.</p>
+
+  <h2>Sync, purchases, privacy</h2>
+
+  <h3>iCloud sync</h3>
+  <p>Sync is <strong>off by default</strong>. When you turn it on, your library syncs through your own
+  private iCloud, between your own devices. Sync starts fresh, and takes effect after you restart the app.
+  Both devices need to be signed into the same Apple Account with iCloud Drive on.</p>
+
+  <h3>Purchases and subscriptions</h3>
+  <p>Purchases are handled by Apple. To manage or cancel a subscription, or request a refund, use your
+  Apple Account settings — we can't do it for you. If a purchase isn't recognized on a new device, use
+  <strong>Restore Purchases</strong> on the Dokit Pro screen.</p>
+
+  <h3>What happens to my documents?</h3>
+  <p>They stay on your device. Nothing is uploaded to us — we run no server and collect no data. See the
+  <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <h2>Reporting a problem</h2>
+  <p>The more of this you can include, the faster it gets fixed:</p>
+  <ul>
+    <li>What you did, and what happened instead.</li>
+    <li>Whether it happens every time.</li>
+    <li>Your app and device version (Settings → Send Feedback fills these in).</li>
+    <li>Which model you're using, if it's about accuracy or speed.</li>
+  </ul>
+  <p><strong>Please don't send us your documents</strong> — we don't need them, and we'd rather not have them.</p>
+
+  <p>Also see the <a href="terms.html">Terms of Use</a>.</p>
+
+  <footer>© 2026 Volodymyr Mykhalchuk. Dokit is not affiliated with Apple Inc.</footer>
+</main>
+</body>
+</html>
